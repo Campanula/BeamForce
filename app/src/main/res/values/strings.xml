@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BeamForce</string>
+    <string name="input_geometry">请输入几何属性</string>
+    <string name="input_material">请输入材料性质</string>
+    <string name="input_constraint">请选择约束类型</string>
+    <string name="select_load_type">请选择载荷类型</string>
+    <string name="input_load">请输入载荷</string>
+    <string name="save">保存</string>
+    <string name="add">添加</string>
+    <string name="yes">确定</string>
+    <string name="cancel">取消</string>
+    
+    <string-array name="constraint_items">
+        <item>固定端</item>
+        <item>固定铰支座</item>
+        <item>滑移支座</item>
+        <item>自由端</item>
+    </string-array>
+</resources>

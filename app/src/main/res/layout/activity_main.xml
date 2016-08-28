@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:clickable="false"
+    style="?android:buttonBarButtonStyle"
+    tools:context="hust.beamforce.MainActivity"
+    android:gravity="bottom" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/wrap_draw_beam"
+        android:layout_weight="1">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/beam_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#6d6d6d"
+        android:maxLines="20"
+        android:hint="未输入模型参数\n" />
+
+
+    <TableRow android:theme="@android:style/Widget.Toolbar.Button.Navigation">
+        <Button
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/geometry_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="尺寸" />
+        <Button
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/material_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="材质" />
+        <Button
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/constraint_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="约束" />
+        <Button
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/loads_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="载荷" />
+    </TableRow>
+
+    <LinearLayout android:orientation="horizontal">
+        <Button
+            android:id="@+id/solver_button"
+            android:enabled="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4db6ac"
+            android:textColor="#e8eaf6"
+            android:text="无法求解" />
+
+        <Button
+            android:id="@+id/draw_button"
+            android:enabled="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4db6ac"
+            android:textColor="#e8eaf6"
+            android:text="无法绘图" />
+    </LinearLayout>
+</TableLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow android:layout_margin="@dimen/activity_horizontal_margin">
+        <TextView
+            android:id="@+id/beam_E"
+            android:layout_height="wrap_content"
+            android:text="弹性模量E：" />
+        <EditText
+            android:id="@+id/E"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入弹性模量 单位:Pa"
+            android:inputType="numberDecimal"/>
+    </TableRow>
+    <TableRow android:layout_margin="@dimen/activity_horizontal_margin">
+        <TextView
+            android:id="@+id/beam_I"
+            android:layout_height="wrap_content"
+            android:text="惯性矩  I：" />
+        <EditText
+            android:id="@+id/I"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入惯性矩 单位:m⁴"
+            android:inputType="numberDecimal"/>
+    </TableRow>
+</TableLayout>
