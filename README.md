@@ -83,6 +83,7 @@ main
 编译输出apk文件位于/BeamForce/app/build/outputs/apk/。
 
 最后编译时间：2016-06-12 01:00
+
 app模块构建配置文件：/BeamForce/app/build.gradle，配置如下：
 
 ```
